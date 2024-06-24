@@ -29,18 +29,3 @@ Add support for the second stream of data using `input-B` and `output-B` queues.
 ### Black box
 1. Client publishes 'hello' to `input-A` and receives '{"result": "hello"}' from `output-A`.
 2. Client publishes 'hello' to `input-B` and receives '{"result": "hello"}' from `output-B`.
-
-
-###Test
-In one terminal run
-`make`
-
-In another terminal run the following command to check the results
-`go run test_client.go`
-
- [x] Sent hello
- [*] Waiting for messages in output-B. To exit press CTRL+C
- [*] Waiting for messages in output-A. To exit press CTRL+C
- [x] Received {"result": "hello"}
- [x] Sent world
- [x] Received {"result": "world"}
